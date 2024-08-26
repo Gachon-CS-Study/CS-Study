@@ -10,7 +10,7 @@
 
 - 인원: 8명
 - 기간: 2024.08.26 ~
-- 장소: 온라인 (Zoom)
+- 장소: 온라인 (Zep)
 - 일시: 매주 월요일 21시 ~ 22시
 
 ## 💻 스터디 진행 방식
@@ -35,3 +35,17 @@
 - 무단 불참: 학습 내용 공유하지 않고 불참할 경우, 2회 이상 불참 시 스터디에서 제명됩니다.
 
 ## 👤 멤버
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Naminhyeok"><img src="https://github.com/user-attachments/assets/46169ea8-b77d-4a3a-8b48-4a8e29d8dcaf" width="100px;" alt=""/><br /><sub><b>나민혁</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seungwon7934"><img src="https://github.com/user-attachments/assets/fc1dd1c1-9829-4c1c-9a85-534437f8d238" width="100px;" alt=""/><br /><sub><b>이승원</b></sub></a></td>
+    <td align="center"><a href="https://github.com/kiwijomn"><img src="https://github.com/user-attachments/assets/b164ee35-35c9-47b3-9439-c9036a9f4b61" width="100px;" alt=""/><br /><sub><b>김지원</b></sub></a></td>
+    <td align="center"><a href="https://github.com/Gongdoribong"><img src="https://github.com/user-attachments/assets/c4c7c607-d682-4ae3-aaf0-0d37871c1988" width="100px;" alt=""/><br /><sub><b>정지영</b></sub></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ejsong25"><img src="https://github.com/user-attachments/assets/37c60430-0024-4e7f-88c4-b1f49ced50e0" width="100px;" alt=""/><br /><sub><b>송은정</b></sub></a></td>
+    <td align="center"><a href="https://github.com/passionryu"><img src="https://github.com/user-attachments/assets/4ae39c21-109c-4275-b9c9-da815bf48571" width="100px;" alt=""/><br /><sub><b>류성열</b></sub></a></td>
+    <td align="center"><a href="https://github.com/ehs208"><img src="https://github.com/user-attachments/assets/73ed0489-b33a-4c9b-bced-2ebdc30f8d9d" width="100px;" alt=""/><br /><sub><b>은현수</b></sub></a></td>
+    <td align="center"><a href="https://github.com/hyper-cloud10"><img src="https://github.com/user-attachments/assets/17efc183-b722-4319-b41b-c5a0834b0262" width="100px;" alt=""/><br /><sub><b>안진형</b></sub></a></td>
+  </tr>
+</table>
