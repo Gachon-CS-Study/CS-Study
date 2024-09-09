@@ -11,7 +11,7 @@
 
 
 ## 스케줄링의 목적
- ![alt text](images\CPU스케줄링\1.png)
+ ![alt text](images/CPU스케줄링/1.png)
 
 
 ## 스케줄링이 필요한 이유
@@ -32,7 +32,7 @@
 
 
 ## 프로세스 상태 
- ![alt text](images\CPU스케줄링\2.png)
+ ![alt text](images/CPU스케줄링/2.png)
 
  - Admitted: 프로세스 생성이 가능하여 승인됨.
 
@@ -72,7 +72,7 @@
 
     - 실행 시간이 짧은 게 뒤로 가면 평균 대기 시간이 길어짐
 
-    ![alt text](images\CPU스케줄링\3.png)
+    ![alt text](images/CPU스케줄링/3.png)
 
  - SJF (Shortest Job First)
 
@@ -80,7 +80,7 @@
 
     - FCFS 보다 평균 대기 시간 감소, 짧은 작업에 유리
 
-    ![alt text](images\CPU스케줄링\4.png)
+    ![alt text](images/CPU스케줄링/4.png)
 
  - HRN (Hightest Response-ratio Next)
 
@@ -103,7 +103,7 @@
 
     - 우선 순위가 전부 동일한 경우, FCFS와 동일
 
-    ![alt text](images\CPU스케줄링\5.png)
+    ![alt text](images/CPU스케줄링/5.png)
 
  - Round Robin
 
@@ -113,13 +113,13 @@
 
     - 할당 시간(Time Quantum)이 크면 FCFS와 같게 되고, 작으면 Context Switching이 잦아져 오버헤드 증가
 
-    ![alt text](images\CPU스케줄링\6.png)
+    ![alt text](images/CPU스케줄링/6.png)
 
  - Multilevel-Queue
 
     - Task를 그룹으로 나누어 여러 개의 Queue를 활용하는 방법
 
-        ![alt text](images\CPU스케줄링\7.png)
+        ![alt text](images/CPU스케줄링/7.png)
 
     - 우선순위가 낮은 큐들이 실행 못하는 걸 방지하고자 각 큐마다 다른 Time Quantum을 설정 해주는 방식 사용
 
@@ -135,9 +135,9 @@
 
     - 처리 시간이 짧은 프로세스를 먼저 처리하기 때문에 Turnaround 평균 시간을 줄여줌
 
-  ![alt text](images\CPU스케줄링\8.png)
+  ![alt text](images/CPU스케줄링/8.png)
   
-  ![alt text](images\CPU스케줄링\9.png)
+  ![alt text](images/CPU스케줄링/9.png)
 
 
 ## Question
