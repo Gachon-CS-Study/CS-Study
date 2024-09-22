@@ -143,6 +143,14 @@
 
         ![alt text](images\Race_condition\16.png)
 
+Question
+---
+Q1. 경쟁 상태란
+
+Q2. 경쟁 상태를 해소하기 위한 방법 3가지와 각각의 간단한 설명
+
+Q3. Busy Waiting과 Block&Wakeup의 차이와 각각의 방법이 유리한 경우
+
 Reference
 ---
  - https://iredays.tistory.com/125
