@@ -2,13 +2,13 @@
 
 ## Race Condition란?
 
- ![alt text](images\Race_condition\1.png)
+ ![alt text](images/Race_condition/1.png)
 
  - 두 개 이상의 프로세스가 공통 자원을 병렬적으로 접근하려할 때 (read & write), 데이터에 접근한 순서에 따라서 실행 결과가 같지 않고 달라지는 상황
 
  - Race: 경쟁하는 상태 (여러 개의 쓰레드가 하나의 자원을 놓고 사용하기 위해 경쟁하는 것을 뜻함)
 
-    ![alt text](images\Race_condition\2.png)
+    ![alt text](images/Race_condition/2.png)
 
 ## 문제점
 
@@ -36,11 +36,11 @@
 
     - Critical Section (임계 구역): Race Condition이 발생할 수 있는 구역
 
-        ![alt text](images\Race_condition\3.png)
+        ![alt text](images/Race_condition/3.png)
 
     - 3가지 요구조건
 
-        ![alt text](images\Race_condition\4.png)
+        ![alt text](images/Race_condition/4.png)
 
     - Mutual Exclusion (상호 배제): 하나의 자원에는 하나의 프로세스만 접근 가능 
 
@@ -54,15 +54,15 @@
 
 ## Peterson's Solution (SW)
 
- ![alt text](images\Race_condition\5.png)
+ ![alt text](images/Race_condition/5.png)
 
- ![alt text](images\Race_condition\6.png)
+ ![alt text](images/Race_condition/6.png)
 
  - Deadlock & Bounded Wait 위반
 
  - 이를 해결하기 위한 방법
 
-    ![alt text](images\Race_condition\7.png)
+    ![alt text](images/Race_condition/7.png)
 
  - not_turn에 대응하는 프로세스는 오직 하나
 
@@ -78,9 +78,9 @@
 
  - 원자적 실행 단위 보장
 
-    ![alt text](images\Race_condition\8.png)
+    ![alt text](images/Race_condition/8.png)
 
-    ![alt text](images\Race_condition\9.png)
+    ![alt text](images/Race_condition/9.png)
 
  - Bounded Waiting 문제 발생
 
@@ -95,13 +95,13 @@
 
  - 하드웨어로 구현 & 원자적 실행
 
-    ![alt text](images\Race_condition\10.png)
+    ![alt text](images/Race_condition/10.png)
 
  - 여전히 Busy waiting 문제 존재
 
 ## Semaphore
 
- ![alt text](images\Race_condition\11.png)
+ ![alt text](images/Race_condition/11.png)
 
  - 자원의 수 + 대기 순서
 
@@ -113,7 +113,7 @@
 
  - 자원의 개수가 하나인 경우
 
-    ![alt text](images\Race_condition\12.png)
+    ![alt text](images/Race_condition/12.png)
 
  ### Counting Semaphore
 
@@ -121,7 +121,7 @@
 
  - 임계 구역의 진입 가능한 프로세스도 여러 개
 
-    ![alt text](images\Race_condition\13.png)  
+    ![alt text](images/Race_condition/13.png)  
 
  ### Busy Waiting (Spin lock) vs Block & Wakeup
 
@@ -133,15 +133,15 @@
 
 - Deadlock & Starvation
 
-    ![alt text](images\Race_condition\14.png)
+    ![alt text](images/Race_condition/14.png)
 
  - Priority Inversion (우선순위 역전)
 
-    ![alt text](images\Race_condition\15.png)
+    ![alt text](images/Race_condition/15.png)
 
      - PIP(Priority Inheritance Protocol)로 해결
 
-        ![alt text](images\Race_condition\16.png)
+        ![alt text](images/Race_condition/16.png)
 
 Question
 ---
