@@ -40,7 +40,7 @@
 
  - 매번 전송한 패킷에 대하여 수신 확인 응답을 받은 후 다음 패킷을 전송하는 방법
 
-    ![alt text](images\1.png)
+    ![alt text](images/1.png)
 
 ### Sliding Window
 
@@ -53,7 +53,7 @@
 
  - Window에 포함되는 모든 Packet을 전송하고, ACK이 오는대로 Window를 옆으로 넘김으로서 (Sliding) 다음 패킷들을 전송
 
-    ![alt text](images\2.png)
+    ![alt text](images/2.png)
 
 
 ## Congestion Control (혼잡 제어)
@@ -71,12 +71,12 @@
 
  - 패킷 손실을 감지하면, Window Size를 절반으로 감소
 
-    ![alt text](images\3.png)
+    ![alt text](images/3.png)
 
 
 ### TCP Reno
 
-![alt text](images\4.png)
+![alt text](images/4.png)
 
 ### Slow Start
 
@@ -113,6 +113,15 @@
  - 혼잡 상태 판정 이후, 다시 Congestion Avoidance로 돌아간 상태
 
  - Timeout이 발생하면 cwnd size를 1로 조정하고 Slow Start 상태로 돌아간다
+
+---
+Question
+
+ - Flow Control과 Congestion Control를 시행하는 이유는?
+
+ - Flow Control과 Congestion Control의 차이점은?
+
+ - Congestion Control의 작동 방식에 대해 설명하시오 (TCP Reno 방식)
 
 
 Reference
