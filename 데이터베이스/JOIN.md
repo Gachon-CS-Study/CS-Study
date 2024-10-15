@@ -14,12 +14,10 @@
 6. SELF JOIN
 
 ### PERSON
-![img.png](images/PERSON.png)
+![img.png](images/join/person.png)
 
 ### ADDRESS
-![img.png](images/ADDRESS.png)
-
-
+![img.png](images/join/address.png)
 
 ## INNER JOIN
 ![img.png](images/join/INNERJOIN.png)
@@ -32,15 +30,11 @@ INNER JOIN 테이블2
 ON 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-
 ![img.png](images/join/innerjoinsql.png)
 
 
-```sql
-
-
 ## LEFT OUTER JOIN
-![img.png](images/leftOuterJoin.png)
+![img.png](images/join/leftOuterJoin.png)
 
 왼쪽 테이블을 기준으로 오른쪽 테이블과 비교하여 교집합을 구한다.
 
@@ -50,7 +44,7 @@ LEFT JOIN 테이블2
 ON 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-![img.png](images/leftjoinSQL.png)
+![img.png](images/join/leftjoinSQL.png)
 
 ## RIGHT OUTER JOIN
 ![img.png](images/join/rightOuterJoin.png)
@@ -63,7 +57,7 @@ RIGHT JOIN 테이블2
 ON 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-![img.png](images/rightjoinSQL.png)
+![img.png](images/join/rightjoinSQL.png)
 
 ## FULL OUTER JOIN
 
@@ -89,7 +83,7 @@ RIGHT JOIN 테이블2
 ON 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-![img.png](images/fulljoinSQL.png)
+![img.png](images/join/fulljoinsql.png)
 
 ## CROSS JOIN
 ![img.png](images/join/CrossJoin.png)
