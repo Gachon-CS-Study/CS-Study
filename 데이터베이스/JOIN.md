@@ -44,7 +44,7 @@ LEFT JOIN 테이블2
 ON 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-![img.png](images/join/leftjoinSQL.png)
+![img.png](images/join/leftjoinsql.png)
 
 ## RIGHT OUTER JOIN
 ![img.png](images/join/rightOuterJoin.png)
@@ -57,7 +57,7 @@ RIGHT JOIN 테이블2
 ON 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-![img.png](images/join/rightjoinSQL.png)
+![img.png](images/join/rightjoinsql.png)
 
 ## FULL OUTER JOIN
 
