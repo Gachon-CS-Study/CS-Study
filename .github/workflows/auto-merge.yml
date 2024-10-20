@@ -1,0 +1,22 @@
+name: Auto Merge Pull Requests
+
+on:
+  schedule:
+    # 매주 월요일 저녁 7시 (UTC 기준, 한국 시간은 UTC+9)
+    - cron: "0 15 * * 0"  # 15:00 UTC는 한국 시간 월요일 새벽 00시
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Merge all open pull requests
+        run: |
+          # 모든 열려있는 PR을 가져오고, 자동으로 머지
+          gh pr list --state open --json number | jq '.[] | .number' | while read pr; do
+            gh pr merge $pr --auto --squash
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
