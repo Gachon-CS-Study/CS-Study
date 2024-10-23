@@ -26,13 +26,13 @@ SELECT user FROM Users WHERE uid = 'USRE_ID' AND upw = 'INPUT_PW';
 SELECT user FROM Users WHERE uid = '' OR 1 = 1 --USRE_ID' AND upw = 'INPUT_PW';
 ```
 
-WHERE절에 있는 싱글 쿼터를 닫아주게 되고, `OR 1 = 1`로 모두 참을 만들어 준 후, `--`를 이용해 그 뒤의 모든 쿼리문을 주석처리해주게 됩니다.
+WHERE절에 있는 싱글 쿼터를 닫아주게 되고, `OR 1 = 1`로 모두 참을 만들어 준 후, `--`를 이용해 그 뒤의 모든 쿼리문을 주석처리해주게 된다.
 
 결국, 테이블의 모든 행을 반환하게 되므로, 특정 사용자 계정이 아닌 첫 번째로 반환되는 사용자(Admin 계정)로 로그인하게 될 가능성이 크다.
 
 ## 2. Union base SQL Injection
 
-UNION 키워드를 사용하여 원래의 요청에 추가 정보를 얻는 공격 기법으로 UNION 하려는 두 테이블의 컬럼 수와 데이터 형식이 같아야 합니다. ORDER BY 절이나 HAVING을 이용한 오류 메시지를 통해 컬럼의 수를 유추할 수 있습니다.
+UNION 키워드를 사용하여 원래의 요청에 추가 정보를 얻는 공격 기법으로 UNION 하려는 두 테이블의 컬럼 수와 데이터 형식이 같아야 한다. ORDER BY 절이나 HAVING을 이용한 오류 메시지를 통해 컬럼의 수를 유추할 수 있다.
 
 게시판이 있고, 게시글을 검색할 때 INPUT을 받아 검색이 진행된다고 했을 때
 
@@ -72,16 +72,16 @@ SELECT user FROM Users WHERE uid = 'USRE_ID' AND upw = 'INPUT_PW'
 SELECT user FROM Users WHERE uid = 'idd3' OR (LENGTH(DATABASE())=1 AND SLEEP(2)) -- USRE_ID' AND upw = 'INPUT_PW';
 ```
 
-- 숫자 1을 조작해 현재 사용하고 있는 데이터 베이스의 길이를 알아낼 수 있습니다.
-- LENGTH를 사용해 문자열 길이를 반환하도록 합니다.
-- DATABASE()를 사용해 데이터베이스의 이름을 반환합니다.
-- SLEEP단어가 치환 처리되었을 경우, BENCHMARK나 WAIT함수를 사용할 수 있습니다.
+- 숫자 1을 조작해 현재 사용하고 있는 데이터 베이스의 길이를 알아낼 수 있다.
+- LENGTH를 사용해 문자열 길이를 반환하도록 한다.
+- DATABASE()를 사용해 데이터베이스의 이름을 반환한다.
+- SLEEP단어가 치환 처리되었을 경우, BENCHMARK나 WAIT함수를 사용할 수 있다.
 
 ## 4. Stored Procedure based SQL Injection
 
 저장 프로시저(Stored Procedure)는 쿼리들을 모아 하나의 함수처럼 사용하기 위한 것이다.
 
-웹에서 저장 프로시저에 대한 접근 권한을 가짐으로써 실행이 가능해집니다. 공격 난도가 높으나 성공 시 직접적인 피해를 입힐 수 있는 공격 기법.
+웹에서 저장 프로시저에 대한 접근 권한을 가짐으로써 실행이 가능해진다. 공격 난도가 높으나 성공 시 직접적인 피해를 입힐 수 있는 공격 기법.
 
 ## 5. Mass SQL Injection
 
