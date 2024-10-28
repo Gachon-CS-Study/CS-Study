@@ -2,8 +2,8 @@ name: Auto Merge Pull Requests
 
 on:
   schedule:
-    - cron: "50 9 * * 1"
-
+    - cron: "0 15 * * 0"  # 15:00 UTC는 한국 시간 월요일 새벽 00시
+  workflow_dispatch:
 jobs:
   merge:
     runs-on: ubuntu-latest
