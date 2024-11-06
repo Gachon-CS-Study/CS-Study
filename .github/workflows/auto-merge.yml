@@ -2,12 +2,15 @@ name: Auto Merge Pull Requests
 
 on:
   schedule:
-    # 매주 월요일 저녁 7시 (UTC 기준, 한국 시간은 UTC+9)
     - cron: "0 15 * * 0"  # 15:00 UTC는 한국 시간 월요일 새벽 00시
-
+  workflow_dispatch:
 jobs:
   merge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write  # 추가하여 병합 권한을 부여
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -19,4 +22,4 @@ jobs:
             gh pr merge $pr --auto --squash
           done
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
