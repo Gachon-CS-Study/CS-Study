@@ -1,6 +1,6 @@
 # DevOps
 
-![alt text](images\DevOps\image.png)
+![alt text](images/DevOps/image.png)
 
  - Development + Operation
 
@@ -8,7 +8,7 @@
 
  - 더 빠르고 나은 애플리케이션을 개발하고, 새롭거나 바뀐 기능과 제품을 고객에게 더 빠르게 릴리즈 할 수 있도록 지원하는 프레임워크
 
- - 개발 팀과 운영 팀 간 원할하고 지속적인 소통, 협업, 통합을 지원함.
+ - 개발 팀과 운영 팀 간 원활하고 지속적인 소통, 협업, 통합을 지원함.
 
 
 ## DevOps가 필요한 이유
@@ -99,7 +99,7 @@
 
     - 변경 사항이 레포지토리를 넘어 프로덕션 환경에 릴리즈 되는 것
 
-![alt text](images\DevOps\image-1.png)
+![alt text](images/DevOps/image-1.png)
 
  - ex) Jenkins, ArgoCD 
 
